@@ -1,0 +1,84 @@
+/* Basic reset and font styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Parallax header */
+.parallax {
+  background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413');
+  height: 60vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax h1 {
+  color: white;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+/* List styling */
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 10%;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.list-item:hover {
+  transform: scale(1.03);
+}
+
+.list-item img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  padding: 2rem;
+}
+
+.text h2 {
+  margin-bottom: 0.5rem;
+  color: #2a4d69;
+}
+
+.text p {
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2a4d69;
+  color: white;
+}
